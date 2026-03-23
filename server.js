@@ -48,10 +48,9 @@ app.use(express.urlencoded({ limit: "50mb", extended: true }));
 app.use(express.json({ limit: "50mb" }));
 
 app.use(cors({
-  origin: "*",
+  origin: ["http://localhost:5173","https://mern-real-time-chat-app-cqxg.onrender.com"],
   credentials: true
 }));
-
 
 // routes setup
 
